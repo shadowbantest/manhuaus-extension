@@ -28,7 +28,7 @@ jobs:
         run: ./gradlew :en:manhuaus:assembleDebug
 
       - name: Upload APK artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ManhuaUS-APK
           path: src/en/manhuaus/build/outputs/apk/debug/*.apk
